@@ -3,6 +3,7 @@ $(document).ready(function () {
     var select = document.getElementsByClassName('select__item act'),
         option = select[0].getElementsByTagName('input')
     for (var i = 0; i < option.length; i++) {
+    
       option[i].addEventListener('click', addCheck)
     }
   }
@@ -11,8 +12,35 @@ $(document).ready(function () {
     if(e.target.getAttribute('checked')) {
       e.target.removeAttribute('checked')
     } else {
+     if(e.target.getAttribute('type') === 'radio'){
+       radioCheck()
+     }
       e.target.setAttribute('checked', true)
     }
+  }
+
+  var radioCheck = function() {
+    var select = document.getElementsByClassName('select__item act'),
+        option = select[0].getElementsByTagName('input')
+    for (var i = 0; i < option.length; i++) {
+      option[i].removeAttribute('checked')
+    }
+  }
+
+  var getNoun = function(number, one, two, five) {
+    let n = Math.abs(number);
+    n %= 100;
+    if (n >= 5 && n <= 20) {
+      return five;
+    }
+    n %= 10;
+    if (n === 1) {
+      return one;
+    }
+    if (n >= 2 && n <= 4) {
+      return two;
+    }
+    return five;
   }
 
   var setTitle = function() {
@@ -27,7 +55,7 @@ $(document).ready(function () {
       }
     }
     if (checked.length > 1) { 
-      text = "Выбрано " + checked.length + " элемента"
+      text = "Выбрано " + checked.length + getNoun(checked.length,' элемент', ' элемента', ' элементов')
     } else if (checked.length === 1) {
       text = checked[0].parentElement.getElementsByTagName('label')[0].innerHTML
     }
