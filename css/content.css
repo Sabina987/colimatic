@@ -1,0 +1,323 @@
+
+.clear {
+	clear: both;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 14px;
+	line-height: 1.2;
+	text-align: left;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+	font-weight: normal;
+	line-height: 1;
+	color: #E30B13;
+	font-size: 65%;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	word-wrap: break-word;
+}
+
+h1 {
+	font-size: 40px;
+	overflow: hidden;
+	margin: 0 0 15px 0;
+}
+
+h2 {
+	font-size: 34px;
+		margin: 0 0 15px 0;
+}
+
+h3 {
+	font-size: 30px;
+		margin: 0 0 15px 0;
+}
+
+h4 {
+	font-size: 24px;
+	margin: 0 0 15px 0;
+}
+
+h5 {
+	font-size: 21px;
+	margin: 0 0 15px 0;
+}
+
+h6 {
+	font-size: 16px;
+		margin: 0 0 15px 0;
+}
+
+p {
+	font-size: 14px;
+	margin: 0 0 15px 0;
+	line-height: 1.6;
+}
+
+a {
+	color: #E30B13;
+}
+
+a,
+a:visited {
+	text-decoration: underline;
+	-webkit-transition: color 0.2s ease 0s;
+	transition: color 0.2s ease 0s;
+	outline: none;
+}
+
+a:visited {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: #000;
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+	outline: none;
+}
+
+pre {
+	background: #ccc;
+	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+pre,
+code {
+	color: #000;
+	font-family: "Consolas", "Courier New", "Nimbus Mono L", monospace;
+	font-size: 12px;
+	overflow: hidden;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	line-height: 20px;
+}
+
+q {
+	quotes: "«" "»";
+	font-style: italic;
+}
+
+q q {
+	quotes: "„" "“";
+	font-style: italic;
+}
+
+blockquote {
+	font-style: italic;
+	text-align: left;
+	border-left: 3px solid #e0e2e3;
+	padding: 0 0 0 14px;
+	margin-bottom: 40px;
+	color: #131313;
+	font-size: 16px;
+}
+
+blockquote q {
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px 0;
+}
+
+blockquote p {
+	color: #131313;
+	padding-bottom: 0;
+}
+
+blockquote cite {
+	color: #666d71;
+	font-size: 12px;
+}
+
+abbr {
+	border-bottom: thin dashed;
+	cursor: help;
+	font-style: italic;
+}
+
+i {
+	font-style: oblique;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0 0 36px 0;
+	border: 1px solid #ccc;
+	margin-top: 22px;
+}
+
+table caption {
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0;
+	text-align: left;
+}
+
+th,
+td {
+	font-size: 14px;
+	text-align: left;
+	border: 1px solid #ccc;
+	padding: 8px;
+}
+
+th {
+	font-size: 14px;
+	color: #000;
+}
+
+td {
+	color: #000;
+	border-bottom: 1px solid #ccc;
+	font-weight: normal;
+}
+
+thead,
+tfoot {
+	background: #ccc;
+}
+
+tr:nth-child(odd) td {
+	background: #fff;
+}
+
+tr:nth-child(even) td {
+	background: #ccc;
+	color: #000;
+}
+
+img {
+	border: 0;
+}
+
+hr {
+	background: #ccc;
+	height: 1px;
+}
+
+dl {
+	padding: 0 0 13px 0;
+}
+
+dt {
+	font-size: 14px;
+	font-weight: bold;
+	color: #3d3e3f;
+	padding: 0 0 7px 0;
+}
+
+dd {
+	color: #666d71;
+	font-size: 14px;
+	font-style: normal;
+	padding: 0 0 28px 0;
+	margin: 0;
+}
+
+ul {
+	padding-left: 30px;
+	margin-bottom: 30px;
+}
+
+ul  li{
+	margin-bottom: 10px;
+}
+
+ol {
+	margin-bottom: 30px;
+}
+
+ol  li{
+	margin-bottom: 10px;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+	margin: 15px 0 0 0;
+}
+
+ul li,
+ol li {
+	color: #000;
+	font-size: 14px;
+	list-style-image: url('../img/bullet-icon.png');
+}
+
+ol ol {
+	list-style-type: lower-alpha;
+}
+
+ol ol ol {
+	list-style-type: decimal;
+}
+
+/**********************************
+	стилизация списка
+	**********************************/
+
+ol{
+	counter-reset: myCounter;
+	margin-bottom: 20px;
+}
+
+ol li{
+	list-style: none;
+	position: relative;
+	padding: 0 0 15px 45px;
+}
+
+ol li:before {
+	counter-increment: myCounter;
+	content:counter(myCounter);
+	color: white;
+	background: #001f3b;
+	display: inline-block;
+	text-align: center;
+	line-height: 22px;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	font-size: 13px;
+	position: absolute;
+	top: 0px;
+	left: 1px;
+}
+
