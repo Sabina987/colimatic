@@ -170,8 +170,8 @@ $(document).ready(function () {
 
     });
 
-    $(".btn .btn_mob").fancybox({
-        afterShow : function()
+    $(".btn_mob").fancybox({
+        afterLoad : function()
         {
             addListener()
         }
