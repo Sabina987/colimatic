@@ -69,20 +69,20 @@ $(document).ready(function () {
             var select_item = $(this).parent("li");
             e.preventDefault();
             if (!select_item.hasClass("act")) {
-                $(".select__item__drop").slideUp(5);
+                $(".select__item__drop").slideUp(500);
                 $("#select > ul > li.act").removeClass("act");
                 select_item.addClass("act");
-                select_item.children(".select__item__drop").slideDown(5);
+                select_item.children(".select__item__drop").slideDown(500);
                 check();
             } else {
                 setTitle();
                 select_item.removeClass("act");
-                select_item.children(".select__item__drop").slideUp(5);
+                select_item.children(".select__item__drop").slideUp(500);
             }
         });
     }
     addListener()
-    $(".select__item__drop").mCustomScrollbar();
+    // $(".select__item__drop").mCustomScrollbar();
 
 
     // Mobile Sidebar

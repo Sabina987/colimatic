@@ -1031,6 +1031,9 @@ span.contacts__adress {
 	padding-right: 138px;
 }
 
+.footer__text_flex a {
+	font-weight: 700;
+}
 
 .footer__text_flex span:hover a {
 	font-weight: 600;
@@ -1076,7 +1079,7 @@ span.contacts__adress {
 }
 
 .modal-container {
-	width: 260px;
+	width: 80%;
 	padding: 30px;
 }
 
