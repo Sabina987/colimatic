@@ -69,14 +69,15 @@ $(document).ready(function () {
             var select_item = $(this).parent("li");
             e.preventDefault();
             if (!select_item.hasClass("act")) {
-                select_item.children(".select__item__drop").slideDown(500);
+                $(".select__item__drop").slideUp(500);
                 $("#select > ul > li.act").removeClass("act");
+                select_item.children(".select__item__drop").slideDown(500);
                 select_item.addClass("act");
                 check();
             } else {
                 setTitle();
-                select_item.removeClass("act");
                 select_item.children(".select__item__drop").slideUp(500);
+                select_item.removeClass("act");
             }
         });
     }
